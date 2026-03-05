@@ -18,4 +18,4 @@ MongoDB uses document models.
 
 
 # Reference diagram
-![Architexture](architecture.png)
+![Architecture](architecture.png)
