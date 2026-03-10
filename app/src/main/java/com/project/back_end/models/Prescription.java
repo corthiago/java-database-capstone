@@ -1,6 +1,6 @@
 package com.project.back_end.models;
 
-import jakarta.persistence.Id;
+import org.springframework.data.annotation.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -19,7 +19,7 @@ public class Prescription {
 //      - The @Id annotation marks it as the primary key in the MongoDB collection.
 //      - The id is of type String, which is commonly used for MongoDB's ObjectId as it stores IDs as strings in the database.
     @Id
-    private Long id;
+    private String id;
 
 // 2. 'patientName' field:
 //    - Type: private String
@@ -67,9 +67,62 @@ public class Prescription {
 // 7. Constructors:
 //    - The class includes a no-argument constructor (default constructor) and a parameterized constructor that initializes the fields: patientName, medication, dosage, doctorNotes, and appointmentId.
 
+    public Prescription(String patientName, Long appointmentId, String medication, String dosage, String doctorNotes) {
+        this.patientName = patientName;
+        this.appointmentId = appointmentId;
+        this.medication = medication;
+        this.dosage = dosage;
+        this.doctorNotes = doctorNotes;
+    }
 // 8. Getters and Setters:
 //    - Standard getter and setter methods are provided for all fields: id, patientName, medication, dosage, doctorNotes, and appointmentId.
 //    - These methods allow access and modification of the fields of the Prescription class.
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPatientName() {
+        return patientName;
+    }
+
+    public void setPatientName(String patientName) {
+        this.patientName = patientName;
+    }
+
+    public Long getAppointmentId() {
+        return appointmentId;
+    }
+
+    public void setAppointmentId(Long appointmentId) {
+        this.appointmentId = appointmentId;
+    }
+
+    public String getMedication() {
+        return medication;
+    }
+
+    public void setMedication(String medication) {
+        this.medication = medication;
+    }
+
+    public String getDosage() {
+        return dosage;
+    }
+
+    public void setDosage(String dosage) {
+        this.dosage = dosage;
+    }
+
+    public String getDoctorNotes() {
+        return doctorNotes;
+    }
+
+    public void setDoctorNotes(String doctorNotes) {
+        this.doctorNotes = doctorNotes;
+    }
 }

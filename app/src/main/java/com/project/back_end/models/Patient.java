@@ -1,5 +1,6 @@
 package com.project.back_end.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -62,6 +63,7 @@ public class Patient {
 //      - The @Size(min = 6) annotation ensures that the password must be at least 6 characters long.
     @NotNull(message = "Password must be provided")
     @Size(min = 6)
+    @JsonIgnore
     private String password;
 
 // 5. 'phone' field:
