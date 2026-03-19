@@ -51,3 +51,27 @@ curl -X GET <URL>/doctor/filter/null/09:00-10:00/Cardiologist
 curl -X GET http://localhost:8080/doctor/filter/null/09:00-10:00/Cardiologist
 
 ```
+
+## Build and run the container
+
+docker build -t smart-clinic-backend .
+
+docker run -d -p 8080:8080 --name smart-clinic smart-clinic-backend
+
+
+## Push to a Container Registry
+
+docker tag smart-clinic-backend your-docker-username/smart-clinic-backend:latest
+
+docker login
+
+docker push your-docker-username/smart-clinic-backend:latest
+
+
+## Cleaning up the container
+
+docker stop smart-clinic
+
+docker rm smart-clinic
+
+docker rmi smart-clinic-backend

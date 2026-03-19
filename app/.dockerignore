@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Maven
+target/
+!target/*.jar
+
+# Node (if you have frontend inside project)
+node_modules/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env / secrets
+.env
+.env.*
+application-local.properties
+application-dev.properties
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Test / docs (optional)
+src/test/
+README.md
