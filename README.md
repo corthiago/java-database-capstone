@@ -28,17 +28,17 @@ Your mission is to:
 
 ## Screenshots
 
-![image](screenshots/Searching doctor.png)
+![Searching Doctor](screenshots/Searching Doctor.png)
 *Figure 1: Searching for doctors - Patient role*
 
-![image](screenshots/Adding Doctor.png)
+![Adding Doctor](screenshots/Adding Doctor.png)
 *Figure 2: Adding Doctor - Admin role*
 
-![image](screenshots/Appointments List.png)
+![Appointments List](screenshots/Appointments List.png)
 *Figure 3: Appointments List - Doctor role*
 
-![image](screenshots/Admin Portal.png)
-*Figure 3: Login screen of the application*
+![Admin Portal](screenshots/Admin Portal.png)
+*Figure 4: Login screen of the application*
 
 ---
 
