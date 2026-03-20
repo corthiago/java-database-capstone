@@ -2,7 +2,6 @@
 import { API_BASE_URL } from "../config/config.js";
 const PATIENT_API = API_BASE_URL + '/patient'
 
-
 //For creating a patient in db
 export async function patientSignup(data) {
   try {
@@ -37,7 +36,6 @@ export async function patientLogin(data) {
     },
     body: JSON.stringify(data)
   });
-
 
 }
 

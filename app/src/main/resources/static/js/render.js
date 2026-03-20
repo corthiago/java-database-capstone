@@ -1,5 +1,4 @@
 // render.js
-
 function selectRole(role) {
   setRole(role);
   const token = localStorage.getItem('token');
@@ -17,7 +16,6 @@ function selectRole(role) {
     }
   }
 }
-
 
 function renderContent() {
   const role = getRole();

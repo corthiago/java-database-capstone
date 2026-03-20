@@ -79,7 +79,6 @@ function redirectToUpdatePage(appointment) {
   }, 100);
 }
 
-
 // Search and Filter Listeners
 document.getElementById("searchBar").addEventListener("input", handleFilterChange);
 document.getElementById("appointmentFilter").addEventListener("change", handleFilterChange);
